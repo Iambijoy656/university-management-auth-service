@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/.d62c2e818e67b8223dac7c446d8e9295ee2f06b7-audit.json",
+    "files": [
+        {
+            "date": 1686854629542,
+            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-16-06-00-error.log",
+            "hash": "82569b4a46c74e958636eb19751d5c353eabdb1700e526a173600a9c385c452c"
+        }
+    ],
+    "hashType": "sha256"
+}
