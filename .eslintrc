@@ -14,7 +14,7 @@
 
   "rules": {
     "@typescript-eslint/no-unused-vars": "error",
-    "prefer-const":"error",
+    "prefer-const": "error",
     "no-console": "warn",
     "no-undef": "error",
     "no-unused-expressions": "error",
@@ -28,6 +28,6 @@
     "node": true
   },
   "globals": {
-    "process": "readonly",
+    "process": "readonly"
   }
 }
