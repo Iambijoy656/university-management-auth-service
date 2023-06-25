@@ -34,6 +34,36 @@
             "date": 1687497423042,
             "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-23-06-11-error.log",
             "hash": "e9d9dd0a9b6485be4baf8f5333f1b3248aebe94bf321b9cfd6bdbe5c4bad3bc7"
+        },
+        {
+            "date": 1687634451421,
+            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-25-06-01-error.log",
+            "hash": "4b3729808fe32a582d5fb99f7246f54bc2a82f7233ace6629aba61f238d6f0f4"
+        },
+        {
+            "date": 1687670285401,
+            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-25-06-11-error.log",
+            "hash": "c5b25742462e5578dedd68aef8d7d78d4ec9f692f29cc5bd03851fc26d6ef950"
+        },
+        {
+            "date": 1687674978393,
+            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-25-06-12-error.log",
+            "hash": "85bd14eea8206ac6003a1252039d25e812ba11b2c323f2a7d6e019e5e0f4e683"
+        },
+        {
+            "date": 1687676431983,
+            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-25-06-13-error.log",
+            "hash": "cc105c2c1677153bd4840dd6073e8d88b9a703a970385a19135cb7ef178bf54b"
+        },
+        {
+            "date": 1687690403504,
+            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-25-06-16-error.log",
+            "hash": "9016d23f2f543d9ca8ac8001536c195eed54a69d425cb807e6d8fa76b9fc4f12"
+        },
+        {
+            "date": 1687690834555,
+            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-25-06-17-error.log",
+            "hash": "429a4a3ba3d13398848e5ede1d12e806eadb2151e39e05b17615f7bc3dc71686"
         }
     ],
     "hashType": "sha256"
