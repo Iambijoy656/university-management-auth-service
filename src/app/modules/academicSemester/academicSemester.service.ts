@@ -1,8 +1,18 @@
-import { IAcademicSemester } from './academicSemester.interface';
-import { academicSemesterTitleCodeMapper } from './academicSemester.constant';
+import {
+  IAcademicSemester,
+  IAcademicSemesterFilters,
+} from './academicSemester.interface';
+import {
+  academicSemesterSearchableFields,
+  academicSemesterTitleCodeMapper,
+} from './academicSemester.constant';
 import ApiError from '../../../errors/ApiError';
 import { AcademicSemester } from './academicSemeter.model';
 import httpStatus from 'http-status';
+import { IPaginationOptions } from '../../../interfaces/pagination';
+import { IGenericResponse } from '../../../interfaces/common';
+import { paginationHelper } from '../../../helpers/paginationHelper';
+import { SortOrder } from 'mongoose';
 
 const createSemester = async (
   payload: IAcademicSemester
@@ -15,6 +25,60 @@ const createSemester = async (
   return result;
 };
 
+const getAllSemester = async (
+  filters: IAcademicSemesterFilters,
+  paginationOptions: IPaginationOptions
+): Promise<IGenericResponse<IAcademicSemester[]>> => {
+  const { searchTerm, ...filtersData } = filters;
+
+  const andConditions = [];
+
+  if (searchTerm) {
+    andConditions.push({
+      $or: academicSemesterSearchableFields.map(field => ({
+        [field]: {
+          $regex: searchTerm,
+          $options: 'i',
+        },
+      })),
+    });
+  }
+
+  if (Object.keys(filtersData).length) {
+    andConditions.push({
+      $and: Object.entries(filtersData).map(([field, value]) => ({
+        [field]: value,
+      })),
+    });
+  }
+
+  const { page, limit, skip, sortBy, sortOrder } =
+    paginationHelper.calculatePaginations(paginationOptions);
+
+  const sortCondition: { [key: string]: SortOrder } = {};
+
+  if (sortBy && sortOrder) {
+    sortCondition[sortBy] = sortOrder;
+  }
+
+  const result = await AcademicSemester.find({ $and: andConditions })
+    .sort(sortCondition)
+    .skip(skip)
+    .limit(limit);
+
+  const total = await AcademicSemester.countDocuments();
+
+  return {
+    meta: {
+      page,
+      limit,
+      total,
+    },
+    data: result,
+  };
+};
+
 export const AcademicSemesterService = {
   createSemester,
+  getAllSemester,
 };
