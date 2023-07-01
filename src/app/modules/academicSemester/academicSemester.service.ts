@@ -1,7 +1,4 @@
-import {
-  IAcademicSemester,
-  IAcademicSemesterFilters,
-} from './academicSemester.interface';
+import { IAcademicSemesterFilters } from './academicSemester.interface';
 import {
   academicSemesterSearchableFields,
   academicSemesterTitleCodeMapper,
@@ -13,6 +10,7 @@ import { IPaginationOptions } from '../../../interfaces/pagination';
 import { IGenericResponse } from '../../../interfaces/common';
 import { paginationHelper } from '../../../helpers/paginationHelper';
 import { SortOrder } from 'mongoose';
+import { IAcademicSemester } from './academicSemester.interface';
 
 const createSemester = async (
   payload: IAcademicSemester
@@ -61,7 +59,10 @@ const getAllSemester = async (
     sortCondition[sortBy] = sortOrder;
   }
 
-  const result = await AcademicSemester.find({ $and: andConditions })
+  const whereCondition =
+    andConditions.length > 0 ? { $and: andConditions } : {};
+
+  const result = await AcademicSemester.find(whereCondition)
     .sort(sortCondition)
     .skip(skip)
     .limit(limit);
@@ -78,7 +79,42 @@ const getAllSemester = async (
   };
 };
 
+const getSingleSemester = async (
+  id: string
+): Promise<IAcademicSemester | null> => {
+  const result = await AcademicSemester.findById(id);
+  return result;
+};
+
+// Ensure 2 : Service level: update => Mapping title : Code
+const updateSemester = async (
+  id: string,
+  payload: Partial<IAcademicSemester>
+): Promise<IAcademicSemester | null> => {
+  if (
+    payload.title &&
+    payload.code &&
+    academicSemesterTitleCodeMapper[payload.title] !== payload.code
+  ) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Invalid Semester Code');
+  }
+  const result = await AcademicSemester.findOneAndUpdate({ _id: id }, payload, {
+    new: true,
+  });
+  return result;
+};
+
+const deleteSemester = async (
+  id: string
+): Promise<IAcademicSemester | null> => {
+  const result = await AcademicSemester.findByIdAndDelete(id);
+  return result;
+};
+
 export const AcademicSemesterService = {
   createSemester,
   getAllSemester,
+  getSingleSemester,
+  updateSemester,
+  deleteSemester,
 };
