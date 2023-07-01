@@ -184,6 +184,16 @@
             "date": 1688191230666,
             "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-01-07-12-error.log",
             "hash": "793b15725ae47098782da2dd13195980783d4990a49ed2e874e20e6c05c7596c"
+        },
+        {
+            "date": 1688212601151,
+            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-01-07-17-error.log",
+            "hash": "f47a8d7c65609ae66075ca6aa006cb747dde60dbc7459ea351db86b0ae7d27a2"
+        },
+        {
+            "date": 1688212836714,
+            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-01-07-18-error.log",
+            "hash": "4e7ef598b106495d65898f842339a9d12604867ab1442fcdcd9fa577d14322e6"
         }
     ],
     "hashType": "sha256"
