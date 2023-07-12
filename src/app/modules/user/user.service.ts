@@ -49,7 +49,6 @@ const createStudent = async (
     }
 
     newUserAllData = newUser[0];
-    console.log(newUserAllData);
 
     await session.commitTransaction();
     await session.endSession();

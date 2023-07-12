@@ -45,7 +45,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 // const testId = async()=>{
 
 //   const testId = await generateFacultyId()
-//   console.log(testId)
+//   logger.info(testId)
 // }
 
 // testId()
