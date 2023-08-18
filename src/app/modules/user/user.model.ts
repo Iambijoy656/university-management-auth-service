@@ -37,4 +37,10 @@ const userSchema = new Schema<IUser>(
   }
 );
 
+userSchema.pre('save', async function (next) {
+  //hasing user password
+
+  next();
+});
+
 export const User = model<IUser, UserModel>('User', userSchema);
