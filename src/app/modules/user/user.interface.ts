@@ -6,8 +6,8 @@ import { IAdmin } from '../admin/admin.interface';
 export type IUser = {
   id: string;
   role: string;
-  password?: string;
-  needsPasswordChange?: true | false;
+  password: string;
+  needsPasswordChange: true | false;
   passwordChangeAt?: Date;
   student?: Types.ObjectId | IStudent;
   faculty?: Types.ObjectId | IFaculty;
