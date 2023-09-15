@@ -1,10 +1,12 @@
 import httpStatus from 'http-status';
-import { Secret } from 'jsonwebtoken';
+import { JwtPayload, Secret } from 'jsonwebtoken';
 import config from '../../../config';
 import ApiError from '../../../errors/ApiError';
 import { jwtHelpers } from '../../../helpers/jwtHelpers';
 import { User } from '../user/user.model';
+import bcrypt from 'bcrypt';
 import {
+  IChangePassword,
   ILoginUser,
   ILoginUserResponse,
   IRefreshTokenResponse,
@@ -17,7 +19,10 @@ const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   //  // access to our instance methods
   //   const isUserExist = await user.isUserExist(id);
 
+  console.log(password);
   const isUserExist = await User.isUserExist(id);
+
+  console.log(isUserExist);
 
   if (!isUserExist) {
     throw new ApiError(httpStatus.NOT_FOUND, 'User does not exist');
@@ -83,7 +88,49 @@ const refreshToken = async (token: string): Promise<IRefreshTokenResponse> => {
   };
 };
 
+const changePassword = async (
+  user: JwtPayload | null,
+  payload: IChangePassword
+): Promise<void> => {
+  const { oldPassword, newPassword } = payload;
+
+  console.log(oldPassword, newPassword);
+  //checking is user exists
+  const isUserExist = await User.isUserExist(user?.userId);
+
+  if (!isUserExist) {
+    throw new ApiError(httpStatus.NOT_FOUND, 'User does not exist');
+  }
+
+  // checking old password
+  if (
+    isUserExist.password &&
+    !(await User.isPasswordMatched(oldPassword, isUserExist.password))
+  ) {
+    throw new ApiError(httpStatus.UNAUTHORIZED, 'Old Password is incorrect');
+  }
+
+  // hash password before saving
+  const newHashPassword = await bcrypt.hash(
+    newPassword,
+    Number(config.bcrypt_salt_rounds)
+  );
+
+  // update password
+  const query = { id: user?.userId };
+
+  const updatedData = {
+    password: newHashPassword,
+    needsPasswordChange: false,
+    passwordChangeAt: new Date(),
+  };
+  const update = await User.findOneAndUpdate(query, updatedData);
+
+  console.log(updatedData, update);
+};
+
 export const AuthService = {
   loginUser,
   refreshToken,
+  changePassword,
 };
