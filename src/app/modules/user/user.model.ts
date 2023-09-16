@@ -85,6 +85,7 @@ userSchema.statics.isPasswordMatched = async function (
   return await bcrypt.compare(givenPassword, savedPassword);
 };
 
+//user.save()
 userSchema.pre('save', async function (next) {
   //hasing user password
   const user = this;
@@ -92,6 +93,11 @@ userSchema.pre('save', async function (next) {
     user.password,
     Number(config.bcrypt_salt_rounds)
   );
+
+  if (!user.needsPasswordChange) {
+    user.passwordChangeAt = new Date();
+  }
+
   next();
 });
 

@@ -4,7 +4,7 @@ import config from '../../../config';
 import ApiError from '../../../errors/ApiError';
 import { jwtHelpers } from '../../../helpers/jwtHelpers';
 import { User } from '../user/user.model';
-import bcrypt from 'bcrypt';
+
 import {
   IChangePassword,
   ILoginUser,
@@ -92,11 +92,16 @@ const changePassword = async (
   user: JwtPayload | null,
   payload: IChangePassword
 ): Promise<void> => {
-  const { oldPassword, newPassword } = payload;
+  const { oldPassword } = payload;
 
-  console.log(oldPassword, newPassword);
+  // console.log(oldPassword, newPassword);
   //checking is user exists
-  const isUserExist = await User.isUserExist(user?.userId);
+  // const isUserExist = await User.isUserExist(user?.userId);
+
+  //alternative way
+  const isUserExist = await User.findOne({ id: user?.userId }).select(
+    '+password'
+  );
 
   if (!isUserExist) {
     throw new ApiError(httpStatus.NOT_FOUND, 'User does not exist');
@@ -110,23 +115,28 @@ const changePassword = async (
     throw new ApiError(httpStatus.UNAUTHORIZED, 'Old Password is incorrect');
   }
 
-  // hash password before saving
-  const newHashPassword = await bcrypt.hash(
-    newPassword,
-    Number(config.bcrypt_salt_rounds)
-  );
+  // // hash password before saving
+  // const newHashPassword = await bcrypt.hash(
+  //   newPassword,
+  //   Number(config.bcrypt_salt_rounds)
+  // );
 
-  // update password
-  const query = { id: user?.userId };
+  // // update password
+  // const query = { id: user?.userId };
 
-  const updatedData = {
-    password: newHashPassword,
-    needsPasswordChange: false,
-    passwordChangeAt: new Date(),
-  };
-  const update = await User.findOneAndUpdate(query, updatedData);
+  // const updatedData = {
+  //   password: newHashPassword,
+  //   needsPasswordChange: false,
+  //   passwordChangeAt: new Date(),
+  // };
+  // await User.findOneAndUpdate(query, updatedData);
+  //----------------------------------------------------------------
 
-  console.log(updatedData, update);
+  //data update
+  isUserExist.needsPasswordChange = false;
+
+  // updating using save()
+  isUserExist.save();
 };
 
 export const AuthService = {
