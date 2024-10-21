@@ -3,6 +3,7 @@ import cors from 'cors';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
 import routes from './app/routes';
 import httpStatus from 'http-status';
+import cookieParser from 'cookie-parser';
 // import { generateFacultyId } from './app/modules/user/user.utils';
 const app: Application = express();
 
@@ -10,6 +11,7 @@ app.use(cors());
 
 //parser
 app.use(express.json());
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
 //Applications routes
@@ -45,7 +47,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 // const testId = async()=>{
 
 //   const testId = await generateFacultyId()
-//   console.log(testId)
+//   logger.info(testId)
 // }
 
 // testId()

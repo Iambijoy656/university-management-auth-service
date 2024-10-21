@@ -1,175 +1,110 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/.d62c2e818e67b8223dac7c446d8e9295ee2f06b7-audit.json",
+  "files": [
+    {
+      "date": 1693674663305,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-02-09-23-error.log",
+      "hash": "36ca71a93cd91b4de9c9083bea0f8f22d432db10d02c69b69f0e8614eece456e"
     },
-    "auditLog": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/.d62c2e818e67b8223dac7c446d8e9295ee2f06b7-audit.json",
-    "files": [
-        {
-            "date": 1688052657787,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-29-06-21-error.log",
-            "hash": "ca79b81d4e52bda5e4f6eccb9d82ca64e67d83f3b306f874f3ff39fe8a9a9778"
-        },
-        {
-            "date": 1688054536454,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-29-06-22-error.log",
-            "hash": "723f569ee3b542f206f9cc9670124da9438b21115dd5647b5278310028394942"
-        },
-        {
-            "date": 1688107572126,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-30-06-12-error.log",
-            "hash": "befc0b2526763ad10d83d82ebac62ad8abe502cb02889bef74af6907253f8bfb"
-        },
-        {
-            "date": 1688108879974,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-30-06-13-error.log",
-            "hash": "412e15553fecda97ff875c3dc2c2250ba5d9a3d1041df2ca34c194094ed27395"
-        },
-        {
-            "date": 1688112465474,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-30-06-14-error.log",
-            "hash": "69e4468ca7f09425970f2ca9335fffcc66b1662d54cca7ca4e3ad4ff4307fb80"
-        },
-        {
-            "date": 1688131246799,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-30-06-19-error.log",
-            "hash": "26e48a293f61473e6af3ecd39636e944fdf4e03284053c2127ea42ad9816ba2e"
-        },
-        {
-            "date": 1688135783726,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-30-06-20-error.log",
-            "hash": "339bde0dc62ce6ab81f73ae005b1bccf12d3ebcb02ddb8a873c0cd6915fab121"
-        },
-        {
-            "date": 1688137424799,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-30-06-21-error.log",
-            "hash": "42e443e52582eb4d9a6efe97d2a5eac0bd2ac622f8dee5864f3ef4259a71b5e2"
-        },
-        {
-            "date": 1688142353329,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-30-06-22-error.log",
-            "hash": "2672e41640fba48e7c915a27b24b3729f96e31e858c1765b920f29f3ff55d7c1"
-        },
-        {
-            "date": 1688148395120,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-01-07-00-error.log",
-            "hash": "eed5693a9afae239b288ba143c27f20737133c15e002ad2ce50a0ff149e58298"
-        },
-        {
-            "date": 1688188924664,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-01-07-11-error.log",
-            "hash": "5beaed40be48fca2d7b9bf3a0842538d0a232e6ec14fd38a1b86e81c8053fce3"
-        },
-        {
-            "date": 1688191230666,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-01-07-12-error.log",
-            "hash": "793b15725ae47098782da2dd13195980783d4990a49ed2e874e20e6c05c7596c"
-        },
-        {
-            "date": 1688212601151,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-01-07-17-error.log",
-            "hash": "f47a8d7c65609ae66075ca6aa006cb747dde60dbc7459ea351db86b0ae7d27a2"
-        },
-        {
-            "date": 1688212836714,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-01-07-18-error.log",
-            "hash": "4e7ef598b106495d65898f842339a9d12604867ab1442fcdcd9fa577d14322e6"
-        },
-        {
-            "date": 1688229627598,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-01-07-22-error.log",
-            "hash": "4f6060fe58918aed24689f9eb928415910c7c0d29b5a9a58afbcbee0615137f4"
-        },
-        {
-            "date": 1688286200288,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-02-07-14-error.log",
-            "hash": "90d9fd6ea8c61a5365b27b81ea77b3c43b88c0fdff61129cba1c5855485a40fd"
-        },
-        {
-            "date": 1688288404527,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-02-07-15-error.log",
-            "hash": "2cc58c0b54705fc814714801ce4e07fbc70f838cabf868ad76b3c5e7ddb9c9c5"
-        },
-        {
-            "date": 1688292345887,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-02-07-16-error.log",
-            "hash": "a354c99ff7f8cf9b20d4ab33a2ca6d7ddae95a8428bb8b5cc2b4a2264c6a90b8"
-        },
-        {
-            "date": 1688316983707,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-02-07-22-error.log",
-            "hash": "b5e8ea8a2cbf4d62d307d2e6a170b39483dfd1d96097df34f7f3d7840ec5b46d"
-        },
-        {
-            "date": 1688356802581,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-03-07-10-error.log",
-            "hash": "8dc97794db663548ef4cd8ddb22c4d1f276a7e0070dbf3fed1682ed383180e9f"
-        },
-        {
-            "date": 1688399782249,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-03-07-21-error.log",
-            "hash": "719fc33c89157e0ba4f70290bba725cc8085ff7e858ffcbfc906f253f1958662"
-        },
-        {
-            "date": 1688448406246,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-04-07-11-error.log",
-            "hash": "1fe663b0a96db71d61486bc5252627503227e4e92097dc780a40a6d4fb86f06c"
-        },
-        {
-            "date": 1688450677607,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-04-07-12-error.log",
-            "hash": "fe5e31fbe6aad22afaeed99c435171396c8f9110ab403402c728f0812ae68d09"
-        },
-        {
-            "date": 1689052163732,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-11-07-11-error.log",
-            "hash": "10774dd7233f0c7ace632c6a4632fab6ec5cb6a5c609f4addba128ce3e72e174"
-        },
-        {
-            "date": 1689056558168,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-11-07-12-error.log",
-            "hash": "49e1351160b8b80f8e02d4dcb0ef084ffce8945ef5dcc70c9c6c543384763a9c"
-        },
-        {
-            "date": 1689061339348,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-11-07-13-error.log",
-            "hash": "4210e103c7383c1099e0076a2e8e9373865a1e3f1478cec51e60de7b97610411"
-        },
-        {
-            "date": 1689073809473,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-11-07-17-error.log",
-            "hash": "8c42a5b4f84585457ae65d0a065ac7bc72c6eb4dcd69e7bcf93fbff80299c460"
-        },
-        {
-            "date": 1689078707336,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-11-07-18-error.log",
-            "hash": "46a1b7fd344c1dffa288b364dbc6ad1eef29e57911abeeb718263656f766abab"
-        },
-        {
-            "date": 1689083075581,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-11-07-19-error.log",
-            "hash": "2b3e1de205dcf0e159f5cfed37debaff763103e73ccfa21bd4411d27d9e1aa20"
-        },
-        {
-            "date": 1689084022195,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-11-07-20-error.log",
-            "hash": "651745134875321be05a41c019bc3854927e2676ac7e431b866027629baeb648"
-        },
-        {
-            "date": 1689095516562,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-11-07-23-error.log",
-            "hash": "839ccbc4a4310939805809c30aa3fc086c45a85b006dd7f9ccfadb8639d51d38"
-        },
-        {
-            "date": 1689098520508,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-12-07-00-error.log",
-            "hash": "9e70fd4ce9cec806546a2b8824aae8a895ca524b4e60c7c1282c7ba1b3957365"
-        },
-        {
-            "date": 1689102168612,
-            "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-12-07-01-error.log",
-            "hash": "69ef536e78815aecc5b888b26f7abdb6206565a86b07ea3b46ab21458ec9c916"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1693719095806,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-03-09-11-error.log",
+      "hash": "ee7db0c2ea3894f5f62d24c73126ca9c4bea42f8dd104e41d0580a217bd38f14"
+    },
+    {
+      "date": 1693758234306,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-03-09-22-error.log",
+      "hash": "e0d5820baf583448f2de3d09a41eb738b235f1f9495454d0fe148b8159cdaeda"
+    },
+    {
+      "date": 1693763774848,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-03-09-23-error.log",
+      "hash": "cacb331003d813f54c4e07216563d07d07432472f4dfdc7d2c20286cdcf02653"
+    },
+    {
+      "date": 1693764034690,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-04-09-00-error.log",
+      "hash": "eda7a2ef6e607934ce90fc99c6986edc2e05a161dc82e71b8a31fc8fedfb5e3e"
+    },
+    {
+      "date": 1693967071931,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-06-09-08-error.log",
+      "hash": "72f9ec9848f643cc0f24612a62dc8e1151ea0b68018338e602964fa2f472c5b2"
+    },
+    {
+      "date": 1693997566339,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-06-09-16-error.log",
+      "hash": "60fbeee7ada3dd4685a9601675f4077dca25d7dc50a7c46d7274a351824a6a65"
+    },
+    {
+      "date": 1693998311648,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-06-09-17-error.log",
+      "hash": "d5427a7c1fc143fa4fb805660884d4181a8ae11a83278553d3a41a28e3371d7e"
+    },
+    {
+      "date": 1694157298556,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-08-09-13-error.log",
+      "hash": "aadbf901aae532e8b9c9b43a1ffa6e41afaa43647c9fafbf30272e32e3bcc6b8"
+    },
+    {
+      "date": 1694191145681,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-08-09-22-error.log",
+      "hash": "a361b7525d6c18438ab6c784cd9527a5a34e88c112056fb11f1597bff937678f"
+    },
+    {
+      "date": 1694192901321,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-08-09-23-error.log",
+      "hash": "a161764469e863baae1594fd755343e792ba247239eec97c9e77e4f95aeef59e"
+    },
+    {
+      "date": 1694274216594,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-09-09-21-error.log",
+      "hash": "636032b30e12e9eb2c1bfe695b089e1f234e3b5376379a606b35e3634159c63e"
+    },
+    {
+      "date": 1694276488956,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-09-09-22-error.log",
+      "hash": "9c2230287128e65f13cc83141d541b8795a15eaa4c590f282b31a4afd1450fae"
+    },
+    {
+      "date": 1694660898321,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-14-09-09-error.log",
+      "hash": "11db71dc45d289f0ff3ab628997cddb99d93d3f4aebf061c8c21f4d1bfc7e1fc"
+    },
+    {
+      "date": 1694707415583,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-14-09-22-error.log",
+      "hash": "a43eba69aa91360cc0764cb9ad05b308489d1f6e7e32b7461cdf2a13dadb5634"
+    },
+    {
+      "date": 1694774108160,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-15-09-16-error.log",
+      "hash": "e2ac7c41fce0a78e88645143b86d12a1d67f6703bc89dc536c147bedeffccfe9"
+    },
+    {
+      "date": 1694775709012,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-15-09-17-error.log",
+      "hash": "3539404dfc0bfecded381c129a20cf81c9e3ae2cfc47865657f161492bbf6557"
+    },
+    {
+      "date": 1694879102485,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-16-09-21-error.log",
+      "hash": "548e6fd8c205e6ada57b0f64fadc21616b2dd1d8a10f1b0c1d3abd59289695eb"
+    },
+    {
+      "date": 1694881055628,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-16-09-22-error.log",
+      "hash": "30a9f9ca398dfee39d2e08aacafecfdccfbf3994316729c9cc68c4e3f33a4c82"
+    },
+    {
+      "date": 1694883664829,
+      "name": "/Users/bijoychandrodas/Desktop/next level/university-management-auth-service/logs/winston/errors/phu-2023-16-09-23-error.log",
+      "hash": "b7a3fb4caf01d9914a74c604cc00ae13de1e8110b1456bfcec77ba20d13d8ac5"
+    }
+  ],
+  "hashType": "sha256"
 }
